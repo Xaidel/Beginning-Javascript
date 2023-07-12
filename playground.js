@@ -39,12 +39,12 @@ function listNFTs () {
 
 // print the total number of NFTs we have minted to the console
 function getTotalSupply() {
-    console.log(mintedNFT.length);
+   return mintedNFT.length;
 }
 
 // call your functions below this line
-mintNFT("SLP", "Test", "Metamask");
-mintNFT("POL", "Test", "Solana");
+mintNFT("SLP", "Test", "Etherium");
+mintNFT("BIT", "Test", "Etherium");
 listNFTs();
-getTotalSupply();
+console.log(getTotalSupply());
  
