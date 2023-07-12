@@ -31,9 +31,10 @@ function mintNFT (name, description, network) {
 function listNFTs () {
     for(let x = 0; x < mintedNFT.length; x++){
         NFT = mintedNFT[x];
-        console.log("Name: " + NFT.name + "\n");
-        console.log("Description: " + NFT.description + "\n");
-        console.log("Network: " + NFT.network + "\n");
+        console.log("Name: " + NFT.name);
+        console.log("Description: " + NFT.description);
+        console.log("Network: " + NFT.network);
+        console.log("-----------------------------------------------");
     }
 }
 
@@ -46,5 +47,5 @@ function getTotalSupply() {
 mintNFT("SLP", "Test", "Etherium");
 mintNFT("BIT", "Test", "Etherium");
 listNFTs();
-console.log(getTotalSupply());
+console.log("Total Supply: "+ getTotalSupply());
  
